@@ -31,7 +31,7 @@ function evaluateZodExpression(expression, sourceFile) {
   const expr = expression.getText(sourceFile).replace(/,\s*$/, '');
   const schema = new Function('z', `return (${expr});`)(getZod());
   const standard = schema?.['~standard'];
-  const jsonSchema = standard?.jsonSchema?.input?.();
+  const jsonSchema = standard?.jsonSchema?.input?.({ target: 'draft-07' });
 
   if (!jsonSchema) {
     throw new Error(`compileSchema() argument did not produce a zod Standard Schema JSON schema: ${expr}`);
