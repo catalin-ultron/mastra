@@ -3,8 +3,8 @@
     "name": "test-65211c04",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Direct generate() method - Gemini basic functionality > should strip workflow tools when toolChoice is none with structured output",
-    "createdAt": "2026-05-21T15:56:54.277Z",
-    "updatedAt": "2026-05-21T15:58:39.436Z"
+    "createdAt": "2026-05-18T10:50:50.791Z",
+    "updatedAt": "2026-05-20T14:04:36.785Z"
   },
   "recordings": [
     {
@@ -43,7 +43,7 @@
             ]
           }
         },
-        "timestamp": 1779379118668
+        "timestamp": 1779285875495
       },
       "response": {
         "status": 200,
@@ -51,9 +51,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Thu, 21 May 2026 15:58:39 GMT",
+          "date": "Wed, 20 May 2026 14:04:36 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=732",
+          "server-timing": "gfet4t7; dur=1260",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -66,19 +66,19 @@
               "content": {
                 "parts": [
                   {
-                    "text": "{\n  \"summary\": \"Regular exercise is crucial for maintaining physical and mental health. It improves cardiovascular health, strengthens bones and muscles, helps manage weight, reduces the risk of chronic diseases, and enhances mood.\"\n}"
+                    "text": "{\n  \"summary\": \"Regular exercise offers numerous physical and mental health benefits, including improved cardiovascular health, weight management, mood enhancement, and reduced risk of chronic diseases.\"\n}"
                   }
                 ],
                 "role": "model"
               },
               "finishReason": "STOP",
-              "avgLogprobs": -0.16665033764309353
+              "avgLogprobs": -0.0672562380094786
             }
           ],
           "usageMetadata": {
             "promptTokenCount": 21,
-            "candidatesTokenCount": 45,
-            "totalTokenCount": 66,
+            "candidatesTokenCount": 37,
+            "totalTokenCount": 58,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
@@ -88,13 +88,13 @@
             "candidatesTokensDetails": [
               {
                 "modality": "TEXT",
-                "tokenCount": 45
+                "tokenCount": 37
               }
             ],
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-2.0-flash",
-          "responseId": "risParyBMMujnsEPxbXwkQ0"
+          "responseId": "c78NaoKrJvuC7M8Pv7iduAI"
         },
         "isStreaming": false
       }

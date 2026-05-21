@@ -3,8 +3,8 @@
     "name": "test-426c5ef4",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Direct generate() method - Gemini basic functionality > should handle generation with structured output",
-    "createdAt": "2026-05-21T15:56:53.385Z",
-    "updatedAt": "2026-05-21T15:58:38.650Z"
+    "createdAt": "2026-05-18T10:50:49.845Z",
+    "updatedAt": "2026-05-20T14:04:35.487Z"
   },
   "recordings": [
     {
@@ -46,7 +46,7 @@
             ]
           }
         },
-        "timestamp": 1779379118005
+        "timestamp": 1779285874612
       },
       "response": {
         "status": 200,
@@ -54,9 +54,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Thu, 21 May 2026 15:58:38 GMT",
+          "date": "Wed, 20 May 2026 14:04:35 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=605",
+          "server-timing": "gfet4t7; dur=844",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -69,19 +69,19 @@
               "content": {
                 "parts": [
                   {
-                    "text": "{\n  \"benefits\": [\"Improved cardiovascular health\", \"Increased strength and endurance\", \"Better mood and reduced stress\"]\n}"
+                    "text": "{\n  \"benefits\": [\"Improved cardiovascular health\", \"Weight management\", \"Boosted mood and reduced stress\"]\n}"
                   }
                 ],
                 "role": "model"
               },
               "finishReason": "STOP",
-              "avgLogprobs": -0.2668295273414025
+              "avgLogprobs": -0.037882792949676516
             }
           ],
           "usageMetadata": {
             "promptTokenCount": 15,
-            "candidatesTokenCount": 26,
-            "totalTokenCount": 41,
+            "candidatesTokenCount": 25,
+            "totalTokenCount": 40,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
@@ -91,13 +91,13 @@
             "candidatesTokensDetails": [
               {
                 "modality": "TEXT",
-                "tokenCount": 26
+                "tokenCount": 25
               }
             ],
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-2.0-flash",
-          "responseId": "risPaszuB4GfnsEPyoiN4Aw"
+          "responseId": "cr8Nav-NLbeBnsEPoqiQsQI"
         },
         "isStreaming": false
       }

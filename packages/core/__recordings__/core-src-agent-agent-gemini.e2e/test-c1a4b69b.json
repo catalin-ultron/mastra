@@ -3,8 +3,8 @@
     "name": "test-c1a4b69b",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Agent network() method > should handle conversation ending with tool result in network (with follow-up user message)",
-    "createdAt": "2026-05-21T15:57:22.816Z",
-    "updatedAt": "2026-05-21T15:59:06.731Z"
+    "createdAt": "2026-05-18T10:51:11.563Z",
+    "updatedAt": "2026-05-20T14:05:09.117Z"
   },
   "recordings": [
     {
@@ -100,7 +100,7 @@
             ]
           }
         },
-        "timestamp": 1779379145281
+        "timestamp": 1779285907959
       },
       "response": {
         "status": 200,
@@ -108,9 +108,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Thu, 21 May 2026 15:59:06 GMT",
+          "date": "Wed, 20 May 2026 14:05:09 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=1403",
+          "server-timing": "gfet4t7; dur=1119",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -123,19 +123,19 @@
               "content": {
                 "parts": [
                   {
-                    "text": "{\n  \"primitiveId\": \"none\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"The weather in San Francisco is sunny and 72 degrees. Is this good weather for a picnic?\",\n  \"selectionReason\": \"I have already retrieved the weather information. Now I need to use an agent to determine if the weather is good for a picnic.\"\n}"
+                    "text": "{\n  \"primitiveId\": \"none\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"Given the weather in San Francisco is sunny and 72°F, is this good weather for a picnic? Please answer yes or no.\",\n  \"selectionReason\": \"The user wants to know if the weather is good for a picnic, so I should ask an agent to make that determination.\"\n}"
                   }
                 ],
                 "role": "model"
               },
               "finishReason": "STOP",
-              "avgLogprobs": -0.21498833173586998
+              "avgLogprobs": -0.1734658804806796
             }
           ],
           "usageMetadata": {
             "promptTokenCount": 924,
-            "candidatesTokenCount": 81,
-            "totalTokenCount": 1005,
+            "candidatesTokenCount": 88,
+            "totalTokenCount": 1012,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
@@ -145,13 +145,13 @@
             "candidatesTokensDetails": [
               {
                 "modality": "TEXT",
-                "tokenCount": 81
+                "tokenCount": 88
               }
             ],
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-2.0-flash",
-          "responseId": "ySsPas7SGI6ekdUPjeHXuAw"
+          "responseId": "lL8Nat7KBJeekdUPhdSF8AU"
         },
         "isStreaming": false
       }

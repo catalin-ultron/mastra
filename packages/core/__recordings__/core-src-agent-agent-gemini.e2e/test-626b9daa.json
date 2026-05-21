@@ -3,8 +3,8 @@
     "name": "test-626b9daa",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Gemini 3 Pro with tool calls > should handle multi-step tool calls with gemini 3 pro",
-    "createdAt": "2026-05-21T15:58:09.069Z",
-    "updatedAt": "2026-05-21T15:59:28.928Z"
+    "createdAt": "2026-05-18T10:51:30.990Z",
+    "updatedAt": "2026-05-20T14:05:54.432Z"
   },
   "recordings": [
     {
@@ -57,7 +57,7 @@
             }
           }
         },
-        "timestamp": 1779379163019
+        "timestamp": 1779285945035
       },
       "response": {
         "status": 200,
@@ -65,9 +65,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Thu, 21 May 2026 15:59:26 GMT",
+          "date": "Wed, 20 May 2026 14:05:51 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=3510",
+          "server-timing": "gfet4t7; dur=6633",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -85,9 +85,9 @@
                       "args": {
                         "location": "San Francisco, CA"
                       },
-                      "id": "e37z0oxt"
+                      "id": "hdn4wtwp"
                     },
-                    "thoughtSignature": "EsMFCsAFAQw51sd3ot9FKWPKDvPWRj8h4SKYmP8wmvxJkvcs8ZA7DRbYDViFc++6KdA3NcANO4HCHuhF1n1Aw3K200PN1sx0S4pQfmNi4CgMEv5H//J2I3r/K7dcxu5ZjKfdQ+qQdO72g4fQDnHBXHaFgxD9puQDzrR//JwPgBoL7FP2dSEHQ+Giqrv0ny53iSmvbdl2+IfZ0/SsVgA6RYpNLpYVn9Ue6UWVa+EssvOHgRtWoByxUoRm+EswVrlAoOj7sqQe8tNVxwZ1GJh2l5yK/cLO2Bm+XzxxbU7tBjIFcX4hJe4FQiaQLpmx7jQ8dB/2njPIkPJwCkD/qUfqRZzHMH6ctxZ91/U//sQwMLH582rpD3IAnYdwbSi8Q4lSXHg/Y4oUAO9GF7+W9w0aY4t94otGh+UlV0aQS1dmsAC1g+lxejT83aY6aJdAU+r69qhUrCpm1Fa+Tsp0Ajk55FvTQ2EEYx1/ZD6rv3DuE0spu0qUAzzzRiRobzucc2pvZUEBvo5xPXn/fTXkF8h+S0MeQCQOSPXiRW6xG9sO35tr6l6b9yO6zJlTcB54fCxPhz9JLGjv9FYQAVjwX70H4sceECsDifCk/CKwF2v79xe3ql9Bq0UZTxxGGbVQGI9bgsW3DerCsFJs5PRAwNsDxZ4MBv6mJlUtfduGyX+JtutSKj8ndaGaCqa+NRPDoPuYQnaROwU4R3ay4MpRTFO8X3rPe1j+4SH4toZlThGVwZuQpAzhT+g8g0gcyvut7l68fWDKqCEpIaKwJR17MmhgbzjUrEJQUokNLjQ5haHEBYF+7dxPlxKs05piNJUfdG1mCJ2gL6LAPtZYuKrQ2N3VdB3cxPkfXvCMAXQRxNUGD48JTa/PF8264i+NLkR+dVRY/9MvY4xnCbgLzQba4YsIWrRTXE3HI4kgSmBTF8fhTNfLMQwc5/0="
+                    "thoughtSignature": "EpMHCpAHAQw51seW2H+s9l/L3QgcKLS1qG1LficKhyp8b7VBhzqGiU6jajJfCpYT6a+KQYT/MMB7pVjCyoTq/qCri/A2CFvYIOeooRiA8tK4oqlogPQ9FzQ0pRogBTWYdWRjRYADmZaZQ4jLXeyTfgOGEw7SqQ5m0la6c6CISoVks2XDl1/c8p6mHVCnZFMn62tMRLl8HQUBUiG9qx9nx2A8QKoOjZoPYz4FpHSrbMPma3WT/SzmnnhRbqxIAyOVCqnsFQCxmKSXLWHXtQmXR3ByEqD3gFEqAMQjUM7q7efuMUuE4t+YVjNJ9BVkltcZ6bcLTrSrlvb7LdHK+yaENEmOM/hMGnA7+5x+KO4XBW6y2nOWFfLO5Ag0hP293N0McKFr1cFMVoG7W3RKOqWzMoFhXt2kEgjKzYBpOHvOLYBoCBLxBt/IOlEhqAu8QECZw+OPJMBDoiCVnHVWI6DnT6sutxemh35ew6wbHiEzQ/DQMivs4GRIdTmlF8x1xfVYyUBj0V5gBqbzQYwPrMf79nM2M+BZgeTNuJRzclLS53uUpdZnPCYf826lSg+RLnfqcPnxmL/3PD+7OOK/dj0FZKF4pX7vzLeHtmXNRMHvb+tJwas+J4rjQnytknItUKLmGbhA2MLsVjI4o7HA/I65LVeSb11EktWcbgJEa1D6j+hRvLXwPpFR4C9hCw2FDU6qFlarETe7OaqhUnxTeB8NgqX99dbKp0lCSy6nAXSO62IDhF6FbZNqG8TRTRCW4xGZzBgtjH7vFKZFJkf+KAiteH9NEZF3vkAGiVg9pahVnf2kS0UWmQOv8hO889hVfcYscA59bzUzcJ2+Ve9tWFSl9kMRd6mczM3o0RMvuQlv8hnEmZJr6lF+9nhjg2/xjv9OVzk7SBmUYnTOGngXN3O9DZtB+kvRutKsHlVo8DS0GlXdYcZ7i0OROrOsmeni+L0xh3CnFn+oHWJcIVkZ/j6HK0yPQUU62kqyAO8gTVBznhWvqtHjKE8fP9ChblxGXO75dVP5GM4UGLQxuAv/og3REZ82wX7Y79PqTTUnJtsFasxhjEQHz48Dkv7B9zwPxY1CSmT0bBgWsfnH1rrmZQhqXHbOs3d9Xqac9+935madhmOB+dhHjc8WRoFZ2fG7eqIp42OGyoA6y7Yrq7Bwlq6H63gqNj0RnseY/hu8E57FPL5SMj85QY+PMCGLbH3B/3hhKpj4jnH0"
                   },
                   {
                     "functionCall": {
@@ -95,7 +95,7 @@
                       "args": {
                         "location": "New York, NY"
                       },
-                      "id": "qkji8gef"
+                      "id": "weirn7ip"
                     }
                   }
                 ],
@@ -109,24 +109,24 @@
           "usageMetadata": {
             "promptTokenCount": 93,
             "candidatesTokenCount": 36,
-            "totalTokenCount": 305,
+            "totalTokenCount": 401,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
                 "tokenCount": 93
               }
             ],
-            "thoughtsTokenCount": 176,
+            "thoughtsTokenCount": 272,
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-3.1-pro-preview",
-          "responseId": "2ysPaqaVCLyekdUPkIWNuQw"
+          "responseId": "ub8NatOlEN6DkdUPuJLf4AM"
         },
         "isStreaming": false
       }
     },
     {
-      "hash": "5b601929a553977b",
+      "hash": "c8713b61bfa6e392",
       "request": {
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-preview:generateContent",
         "method": "POST",
@@ -151,7 +151,7 @@
                       "location": "San Francisco, CA"
                     }
                   },
-                  "thoughtSignature": "EsMFCsAFAQw51sd3ot9FKWPKDvPWRj8h4SKYmP8wmvxJkvcs8ZA7DRbYDViFc++6KdA3NcANO4HCHuhF1n1Aw3K200PN1sx0S4pQfmNi4CgMEv5H//J2I3r/K7dcxu5ZjKfdQ+qQdO72g4fQDnHBXHaFgxD9puQDzrR//JwPgBoL7FP2dSEHQ+Giqrv0ny53iSmvbdl2+IfZ0/SsVgA6RYpNLpYVn9Ue6UWVa+EssvOHgRtWoByxUoRm+EswVrlAoOj7sqQe8tNVxwZ1GJh2l5yK/cLO2Bm+XzxxbU7tBjIFcX4hJe4FQiaQLpmx7jQ8dB/2njPIkPJwCkD/qUfqRZzHMH6ctxZ91/U//sQwMLH582rpD3IAnYdwbSi8Q4lSXHg/Y4oUAO9GF7+W9w0aY4t94otGh+UlV0aQS1dmsAC1g+lxejT83aY6aJdAU+r69qhUrCpm1Fa+Tsp0Ajk55FvTQ2EEYx1/ZD6rv3DuE0spu0qUAzzzRiRobzucc2pvZUEBvo5xPXn/fTXkF8h+S0MeQCQOSPXiRW6xG9sO35tr6l6b9yO6zJlTcB54fCxPhz9JLGjv9FYQAVjwX70H4sceECsDifCk/CKwF2v79xe3ql9Bq0UZTxxGGbVQGI9bgsW3DerCsFJs5PRAwNsDxZ4MBv6mJlUtfduGyX+JtutSKj8ndaGaCqa+NRPDoPuYQnaROwU4R3ay4MpRTFO8X3rPe1j+4SH4toZlThGVwZuQpAzhT+g8g0gcyvut7l68fWDKqCEpIaKwJR17MmhgbzjUrEJQUokNLjQ5haHEBYF+7dxPlxKs05piNJUfdG1mCJ2gL6LAPtZYuKrQ2N3VdB3cxPkfXvCMAXQRxNUGD48JTa/PF8264i+NLkR+dVRY/9MvY4xnCbgLzQba4YsIWrRTXE3HI4kgSmBTF8fhTNfLMQwc5/0="
+                  "thoughtSignature": "EpMHCpAHAQw51seW2H+s9l/L3QgcKLS1qG1LficKhyp8b7VBhzqGiU6jajJfCpYT6a+KQYT/MMB7pVjCyoTq/qCri/A2CFvYIOeooRiA8tK4oqlogPQ9FzQ0pRogBTWYdWRjRYADmZaZQ4jLXeyTfgOGEw7SqQ5m0la6c6CISoVks2XDl1/c8p6mHVCnZFMn62tMRLl8HQUBUiG9qx9nx2A8QKoOjZoPYz4FpHSrbMPma3WT/SzmnnhRbqxIAyOVCqnsFQCxmKSXLWHXtQmXR3ByEqD3gFEqAMQjUM7q7efuMUuE4t+YVjNJ9BVkltcZ6bcLTrSrlvb7LdHK+yaENEmOM/hMGnA7+5x+KO4XBW6y2nOWFfLO5Ag0hP293N0McKFr1cFMVoG7W3RKOqWzMoFhXt2kEgjKzYBpOHvOLYBoCBLxBt/IOlEhqAu8QECZw+OPJMBDoiCVnHVWI6DnT6sutxemh35ew6wbHiEzQ/DQMivs4GRIdTmlF8x1xfVYyUBj0V5gBqbzQYwPrMf79nM2M+BZgeTNuJRzclLS53uUpdZnPCYf826lSg+RLnfqcPnxmL/3PD+7OOK/dj0FZKF4pX7vzLeHtmXNRMHvb+tJwas+J4rjQnytknItUKLmGbhA2MLsVjI4o7HA/I65LVeSb11EktWcbgJEa1D6j+hRvLXwPpFR4C9hCw2FDU6qFlarETe7OaqhUnxTeB8NgqX99dbKp0lCSy6nAXSO62IDhF6FbZNqG8TRTRCW4xGZzBgtjH7vFKZFJkf+KAiteH9NEZF3vkAGiVg9pahVnf2kS0UWmQOv8hO889hVfcYscA59bzUzcJ2+Ve9tWFSl9kMRd6mczM3o0RMvuQlv8hnEmZJr6lF+9nhjg2/xjv9OVzk7SBmUYnTOGngXN3O9DZtB+kvRutKsHlVo8DS0GlXdYcZ7i0OROrOsmeni+L0xh3CnFn+oHWJcIVkZ/j6HK0yPQUU62kqyAO8gTVBznhWvqtHjKE8fP9ChblxGXO75dVP5GM4UGLQxuAv/og3REZ82wX7Y79PqTTUnJtsFasxhjEQHz48Dkv7B9zwPxY1CSmT0bBgWsfnH1rrmZQhqXHbOs3d9Xqac9+935madhmOB+dhHjc8WRoFZ2fG7eqIp42OGyoA6y7Yrq7Bwlq6H63gqNj0RnseY/hu8E57FPL5SMj85QY+PMCGLbH3B/3hhKpj4jnH0"
                 },
                 {
                   "functionCall": {
@@ -226,7 +226,7 @@
             }
           }
         },
-        "timestamp": 1779379166569
+        "timestamp": 1779285951709
       },
       "response": {
         "status": 200,
@@ -234,9 +234,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Thu, 21 May 2026 15:59:28 GMT",
+          "date": "Wed, 20 May 2026 14:05:54 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=2327",
+          "server-timing": "gfet4t7; dur=2689",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -249,8 +249,8 @@
               "content": {
                 "parts": [
                   {
-                    "text": "The weather in San Francisco is currently sunny with a temperature of 72°F. In New York, it is also sunny with a temperature of 72°F.",
-                    "thoughtSignature": "EoIDCv8CAQw51sfyAXfP0DW6ZAD/+zo5LVkgvk2jwpCM43XOJj+lguMsJ0lC87VQtb34hp/TnBKhvMm+sIrdTDQ3gTCbtMHaFZyCJfu0QbruYZynENMIz66g4L/FRTHggZjzCrbXVR8BVEOwv8T4+ZrBfFma6HGKk8qWvhqdLDsX0Xa2gl/IFou1M6WMx75OBWQ+6TEFTOv+WWujjZOC9qXMEELoXBWqSK8zxK/r8aBAlse9ruG85AVMpuvNPZ70Cv4adFl63mmr2/6g67IU4A2I7kybD4UzZuaEd8FTp52ElydxENhx06noMkeFfijxuuiTe8KFFtHolZtTVwigXXYbBZpZqrsNpbuzOXqTEZAuohe3/ivM8wtEDr/ffw/DKmm8iRi9vGzopHvGp3SfitnAY7rfR78DxD9fXa4TQOFWkTL5al1cQ5zG7Ij/SL1DFahE6jTHjEHkcwyNVfzDZNRToJE+XoCovHD9S+xeURRb1zw7ji4PITwlIos/wSCxgfxfr7g="
+                    "text": "Currently, the weather in both San Francisco and New York is sunny with a temperature of 72°F.",
+                    "thoughtSignature": "Eu8CCuwCAQw51sfq8yYYZDG1qoPyLO0SjYqjemZb/aLdZj2GEdhR4SQS2tAqltt6Y9OpgWD6fQiREB7bLfW8ziqwTMMu6lW5OOYlyoh3psL7HQqKnnT4vDgezJLmWQyp7OEIUE9oQanQTxvWMCJmaJTZKg+H+3E/mHcTJfxVatlMT/ePMyZGwwVeT+xtOc7PfWYy9y82APR+MwCZgsZCwz7xbfEPu4ioUsimF0owB4YiXSbey7l284d//463vgqsThp+l7J8ZWd+4En2l5C/v2UNZXRLBTXLNOjxGFrZpwmesCgJHnDpMZ1/YnRbLF+kJCAg3GJQbKLIHh/eev+KAADF/JuICVkkX/Tz4b/8uP8El19+yxFmRZd6Z9hsV6jk5+3S7xdQHiAZ9Zt2CuhyYKvlLg6SRAg7GrNeiSQh35VT8+HwjcjvxAs4Vy0mxsau2SbFXSLOpvBHvmfLG9de3VR6D+KX6aLF8/Cu3TAEHgjv7A=="
                   }
                 ],
                 "role": "model"
@@ -260,20 +260,20 @@
             }
           ],
           "usageMetadata": {
-            "promptTokenCount": 356,
-            "candidatesTokenCount": 36,
-            "totalTokenCount": 486,
+            "promptTokenCount": 418,
+            "candidatesTokenCount": 23,
+            "totalTokenCount": 538,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
-                "tokenCount": 356
+                "tokenCount": 418
               }
             ],
-            "thoughtsTokenCount": 94,
+            "thoughtsTokenCount": 97,
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-3.1-pro-preview",
-          "responseId": "3isPaq7_KeqkkdUPorDKwQk"
+          "responseId": "v78NapfQMq-jkdUPwKC7uQI"
         },
         "isStreaming": false
       }
