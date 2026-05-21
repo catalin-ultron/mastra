@@ -22,7 +22,7 @@ export function hasTavilyKey(): boolean {
  * relevance filtering, markdown string formatting, and token truncation.
  * The underlying Tavily tool handles client init, input validation, and the API call.
  */
-export function createWebSearchTool() {
+export function createWebSearchTool(): any {
   const tavilySearchTool = createTavilySearchTool();
 
   return createTool({
@@ -58,7 +58,7 @@ export function createWebSearchTool() {
  * Wraps the @mastra/tavily extract tool with mastracode-specific behavior:
  * markdown string formatting and token truncation.
  */
-export function createWebExtractTool() {
+export function createWebExtractTool(): any {
   const tavilyExtractTool = createTavilyExtractTool();
 
   return createTool({

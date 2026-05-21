@@ -46,7 +46,7 @@ import { createOutcomeScorer, createEfficiencyScorer } from './evals/scorers/ind
 import { HookManager } from './hooks/index.js';
 import { createMcpManager } from './mcp/index.js';
 import type { McpServerConfig } from './mcp/index.js';
-import type { ProviderAccess } from './onboarding/packs.js';
+import type { ModePack, OMPack, ProviderAccess } from './onboarding/packs.js';
 import { getAvailableModePacks, getAvailableOmPacks } from './onboarding/packs.js';
 import {
   getCustomProviderId,
@@ -83,6 +83,20 @@ const PROVIDER_TO_OAUTH_ID: Record<string, string> = {
   openai: 'openai-codex',
   'github-copilot': 'github-copilot',
 };
+
+export interface MastraCodeResult {
+  harness: Harness<Record<string, unknown> | undefined>;
+  mcpManager: ReturnType<typeof createMcpManager> | undefined;
+  hookManager: HookManager | undefined;
+  authStorage: AuthStorage;
+  resolveModel: typeof resolveModel;
+  storageWarning: string | undefined;
+  observabilityWarning: string | undefined;
+  signalsPubSub: PubSub | undefined;
+  builtinPacks: ModePack[];
+  builtinOmPacks: OMPack[];
+  effectiveDefaults: Record<string, string>;
+}
 
 export interface MastraCodeConfig {
   /** Working directory for project detection. Default: process.cwd() */
@@ -176,7 +190,7 @@ function resolveCloudObservabilityConfig(
   };
 }
 
-export async function createMastraCode(config?: MastraCodeConfig) {
+export async function createMastraCode(config?: MastraCodeConfig): Promise<MastraCodeResult> {
   const cwd = config?.cwd ?? process.cwd();
   const configDir = config?.configDir ?? DEFAULT_CONFIG_DIR;
   if (configDir !== DEFAULT_CONFIG_DIR) {
