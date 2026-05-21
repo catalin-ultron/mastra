@@ -3,8 +3,8 @@
     "name": "test-ec76f34b",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Agent network() method > should handle messages starting with assistant-with-tool-call in network",
-    "createdAt": "2026-05-18T10:51:14.719Z",
-    "updatedAt": "2026-05-20T14:05:12.559Z"
+    "createdAt": "2026-05-21T15:57:28.779Z",
+    "updatedAt": "2026-05-21T15:59:10.591Z"
   },
   "recordings": [
     {
@@ -100,7 +100,7 @@
             ]
           }
         },
-        "timestamp": 1779285911278
+        "timestamp": 1779379149315
       },
       "response": {
         "status": 200,
@@ -108,9 +108,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Wed, 20 May 2026 14:05:12 GMT",
+          "date": "Thu, 21 May 2026 15:59:10 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=1247",
+          "server-timing": "gfet4t7; dur=1236",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -123,13 +123,13 @@
               "content": {
                 "parts": [
                   {
-                    "text": "{\n  \"primitiveId\": \"agent\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"The test tool returned the following result: `{\\\"test_tool_response\\\": {\\\"content\\\": \\\"previous result\\\", \\\"name\\\": \\\"test-tool\\\"}}`. Can you explain what this means?\",\n  \"selectionReason\": \"The user wants to understand the output of the test tool. An agent is best suited to explain the result in a user-friendly way.\"\n}"
+                    "text": "{\n  \"primitiveId\": \"agent\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"The test tool returned the following result: `{\\\"test_tool_response\\\": {\\\"content\\\": \\\"previous result\\\", \\\"name\\\": \\\"test-tool\\\"}}`. Explain what this means.\",\n  \"selectionReason\": \"The user wants to understand the result of the test tool. An agent is the best choice to explain the result in a human-understandable way.\"\n}"
                   }
                 ],
                 "role": "model"
               },
               "finishReason": "STOP",
-              "avgLogprobs": -0.1675449482445578
+              "avgLogprobs": -0.16999144693022794
             }
           ],
           "usageMetadata": {
@@ -151,7 +151,7 @@
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-2.0-flash",
-          "responseId": "l78Nap20GNXmnsEPyJukOA"
+          "responseId": "zSsPariYGq36nsEPz9KT8Qk"
         },
         "isStreaming": false
       }

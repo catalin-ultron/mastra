@@ -3,8 +3,8 @@
     "name": "test-3ae2bed0",
     "testFile": "packages/core/src/agent/agent-gemini.e2e.test.ts",
     "testName": "Gemini Model Compatibility Tests > Agent network() method > should return structured output from network",
-    "createdAt": "2026-05-18T10:51:01.659Z",
-    "updatedAt": "2026-05-20T14:06:53.060Z"
+    "createdAt": "2026-05-21T15:57:12.793Z",
+    "updatedAt": "2026-05-21T15:58:56.573Z"
   },
   "recordings": [
     {
@@ -65,7 +65,7 @@
             ]
           }
         },
-        "timestamp": 1779286002020
+        "timestamp": 1779379125032
       },
       "response": {
         "status": 200,
@@ -73,9 +73,9 @@
         "headers": {
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-type": "application/json; charset=UTF-8",
-          "date": "Wed, 20 May 2026 14:06:43 GMT",
+          "date": "Thu, 21 May 2026 15:58:46 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=1543",
+          "server-timing": "gfet4t7; dur=935",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
@@ -88,19 +88,19 @@
               "content": {
                 "parts": [
                   {
-                    "text": "{\n  \"primitiveId\": \"helperAgent\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"Provide a brief overview of Artificial Intelligence (AI), including its definition, key concepts, applications, and current trends.\",\n  \"selectionReason\": \"The user wants a brief overview of AI, which aligns with the capabilities of the helperAgent. It can provide the requested information. There are no workflows or tools available that are suitable for this task.\"\n}"
+                    "text": "{\n  \"primitiveId\": \"helperAgent\",\n  \"primitiveType\": \"agent\",\n  \"prompt\": \"Provide a brief overview of Artificial Intelligence (AI), including its definition, key concepts, history, applications, and current trends.\",\n  \"selectionReason\": \"The user wants a brief overview of AI, and the helperAgent is best suited to provide that information.\"\n}"
                   }
                 ],
                 "role": "model"
               },
               "finishReason": "STOP",
-              "avgLogprobs": -0.2402437365784937
+              "avgLogprobs": -0.19084723201798803
             }
           ],
           "usageMetadata": {
             "promptTokenCount": 838,
-            "candidatesTokenCount": 98,
-            "totalTokenCount": 936,
+            "candidatesTokenCount": 81,
+            "totalTokenCount": 919,
             "promptTokensDetails": [
               {
                 "modality": "TEXT",
@@ -110,19 +110,19 @@
             "candidatesTokensDetails": [
               {
                 "modality": "TEXT",
-                "tokenCount": 98
+                "tokenCount": 81
               }
             ],
             "serviceTier": "standard"
           },
           "modelVersion": "gemini-2.0-flash",
-          "responseId": "8r8Naqj8Fo-ekdUPlcyHqAQ"
+          "responseId": "tSsPaqjaCYjX7M8Prbb2mAg"
         },
         "isStreaming": false
       }
     },
     {
-      "hash": "e1d2ab6337dbd97d",
+      "hash": "1753f1c6e28a4e7a",
       "request": {
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse",
         "method": "POST",
@@ -141,7 +141,7 @@
               "role": "user",
               "parts": [
                 {
-                  "text": "Provide a brief overview of Artificial Intelligence (AI), including its definition, key concepts, applications, and current trends."
+                  "text": "Provide a brief overview of Artificial Intelligence (AI), including its definition, key concepts, history, applications, and current trends."
                 }
               ]
             }
@@ -154,7 +154,7 @@
             ]
           }
         },
-        "timestamp": 1779286003710
+        "timestamp": 1779379125999
       },
       "response": {
         "status": 200,
@@ -163,33 +163,34 @@
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-disposition": "attachment",
           "content-type": "text/event-stream",
-          "date": "Wed, 20 May 2026 14:06:44 GMT",
+          "date": "Thu, 21 May 2026 15:58:46 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=534",
+          "server-timing": "gfet4t7; dur=480",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
           "x-xss-protection": "0"
         },
         "chunks": [
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"Okay\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \", here's a brief overview of Artificial Intelligence:\\n\\n**Definition:** Artificial Intelligence (AI\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \") is the broad concept of creating machines capable of performing tasks that typically require human intelligence\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \". This includes learning, problem-solving, decision-making, and perception.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):**  \"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"A subset of AI focused on enabling systems to learn from data without explicit programming. Common techniques include supervised learning (training on labeled data), unsupervised learning (finding patterns in unlabeled data\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"), and reinforcement learning (learning through trial and error).\\n*   **Deep Learning (DL):** A subset of ML that uses artificial neural networks with multiple layers (deep neural networks) to analyze data with complex patterns.\\n*   **Natural Language\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   **Computer Vision:** Enables computers to \\\"see\\\" and interpret images and videos.\\n*   **Robotics:** Designing, constructing, operating\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \", and applying robots to perform tasks.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine.\\n*   **Finance:** Fraud detection, algorithmic trading, risk management.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Manufacturing:** Automation, quality control,\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" predictive maintenance.\\n*   **Customer Service:** Chatbots, virtual assistants.\\n*   **Entertainment:** Recommendation systems, content generation.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Rapid advancements in models capable of creating new content (text, images, audio, video).\\n*   **Explainable AI (\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"XAI):**  Efforts to make AI decision-making more transparent and understandable.\\n*   **Edge AI:** Processing AI tasks locally on devices (e.g., smartphones, IoT devices) rather than relying solely on the cloud.\\n*   **AI Ethics and Governance:** Increasing focus on responsible AI development and\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 36,\"totalTokenCount\": 36,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" deployment, addressing issues like bias, fairness, and privacy.\\n*   **AI in Cybersecurity:** Using AI to detect and respond to cyber threats.\\n\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 34,\"candidatesTokenCount\": 432,\"totalTokenCount\": 466,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 34}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 432}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"878NavXbPOPLwOYP0OrJ4Qw\"}\r\n\r\n"
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"**\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"Definition:** Artificial\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" Intelligence (AI) is the broad concept of creating machines capable of performing tasks that\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" typically require human intelligence.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"** Algorithms that allow computers to learn from data without explicit programming.\\n*   **Deep Learning (DL):** A subfield of ML using artificial neural networks with\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" multiple layers to analyze data.\\n*   **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   \"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"**Computer Vision:** Allows computers to \\\"see\\\" and interpret images.\\n*   **Robotics:** Design, construction, operation, and application of robots.\\n\\n**History:**\\n\\n*   **Early Days (1950s\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"):** Birth of AI with the Turing Test.\\n*   **Symbolic AI (1960s-1980s):** Focus on rule-based systems and expert systems.\\n*   **AI Winter (19\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"80s-1990s):** Funding cuts due to unmet expectations.\\n*   **Resurgence (2000s-Present):** Driven by increased computing power, big data, and advancements in ML/DL.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \".\\n*   **Finance:** Fraud detection, algorithmic trading.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Retail:** Recommendation systems, chatbots.\\n*   **Manufacturing:** Automation, predictive maintenance.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Models that can\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" create new content (text, images, etc.).\\n*   **Explainable AI (XAI):** Making AI decision-making more transparent and understandable.\\n*   **AI Ethics and Governance:** Addressing bias, fairness, and responsible AI development.\\n*   **Edge AI:** Processing AI tasks locally on devices rather\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 38,\"totalTokenCount\": 38,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 38}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" than in the cloud.\\n*   **AI in Cybersecurity:** Using AI to detect and prevent cyber threats.\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 36,\"candidatesTokenCount\": 421,\"totalTokenCount\": 457,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 36}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 421}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"tisPasnLC_a7gLUPv8DakQ8\"}\r\n\r\n"
         ],
-        "chunkTimings": [0, 85, 132, 189, 281, 347, 314, 426, 435, 456, 272],
+        "chunkTimings": [0, 1, 22, 159, 237, 178, 341, 334, 523, 451, 454, 160],
         "isStreaming": true
       }
     },
     {
-      "hash": "dc5bec623fcebebc",
+      "hash": "0a4faff8b13fd3d8",
       "request": {
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse",
         "method": "POST",
@@ -220,7 +221,7 @@
               "role": "user",
               "parts": [
                 {
-                  "text": "\n    The agent helperAgent has contributed to the task.\n    This is the result: \"Okay, here's a brief overview of Artificial Intelligence:\\n\\n**Definition:** Artificial Intelligence (AI) is the broad concept of creating machines capable of performing tasks that typically require human intelligence. This includes learning, problem-solving, decision-making, and perception.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):**  A subset of AI focused on enabling systems to learn from data without explicit programming. Common techniques include supervised learning (training on labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning through trial and error).\\n*   **Deep Learning (DL):** A subset of ML that uses artificial neural networks with multiple layers (deep neural networks) to analyze data with complex patterns.\\n*   **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   **Computer Vision:** Enables computers to \\\"see\\\" and interpret images and videos.\\n*   **Robotics:** Designing, constructing, operating, and applying robots to perform tasks.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine.\\n*   **Finance:** Fraud detection, algorithmic trading, risk management.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Manufacturing:** Automation, quality control, predictive maintenance.\\n*   **Customer Service:** Chatbots, virtual assistants.\\n*   **Entertainment:** Recommendation systems, content generation.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Rapid advancements in models capable of creating new content (text, images, audio, video).\\n*   **Explainable AI (XAI):**  Efforts to make AI decision-making more transparent and understandable.\\n*   **Edge AI:** Processing AI tasks locally on devices (e.g., smartphones, IoT devices) rather than relying solely on the cloud.\\n*   **AI Ethics and Governance:** Increasing focus on responsible AI development and deployment, addressing issues like bias, fairness, and privacy.\\n*   **AI in Cybersecurity:** Using AI to detect and respond to cyber threats.\\n\"\n    \n    \n\nPrimitives already executed: agent \"helperAgent\"\n\n    You need to evaluate if the task is complete. Pay very close attention to the SYSTEM INSTRUCTIONS for when the task is considered complete. \n    Only return true if the task is complete according to the system instructions.\n    Original task: Research AI briefly\n\n    If no primitive (type = 'none'), the task is complete because we can't run any primitive to further task completion.\n\n    Also, if the agent helperAgent has declined the tool call in its response, then the task is complete as the primitive tool-call was declined by the user.\n\n    IMPORTANT: If the above result is from an AGENT PRIMITIVE and it is a suitable final result itself considering the original task, then finalResult should be an empty string or undefined.\n    \n    If the task is complete and the result is not from an AGENT PRIMITIVE, always generate a finalResult.\n    IF the task is complete and the result is from an AGENT PRIMITIVE, but the AGENT PRIMITIVE response is not comprehensive enough to accomplish the user's original task, then generate a finalResult.\n\n    IMPORTANT: The generated finalResult should not be the exact primitive result. You should craft a comprehensive response based on the message history.\n    The finalResult field should be written in natural language.\n\n    You must return this JSON shape:\n    {\n      \"isComplete\": boolean,\n      \"completionReason\": string,\n      \"finalResult\": string,\n    }\n  "
+                  "text": "\n    The agent helperAgent has contributed to the task.\n    This is the result: \"**Definition:** Artificial Intelligence (AI) is the broad concept of creating machines capable of performing tasks that typically require human intelligence.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):** Algorithms that allow computers to learn from data without explicit programming.\\n*   **Deep Learning (DL):** A subfield of ML using artificial neural networks with multiple layers to analyze data.\\n*   **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   **Computer Vision:** Allows computers to \\\"see\\\" and interpret images.\\n*   **Robotics:** Design, construction, operation, and application of robots.\\n\\n**History:**\\n\\n*   **Early Days (1950s):** Birth of AI with the Turing Test.\\n*   **Symbolic AI (1960s-1980s):** Focus on rule-based systems and expert systems.\\n*   **AI Winter (1980s-1990s):** Funding cuts due to unmet expectations.\\n*   **Resurgence (2000s-Present):** Driven by increased computing power, big data, and advancements in ML/DL.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine.\\n*   **Finance:** Fraud detection, algorithmic trading.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Retail:** Recommendation systems, chatbots.\\n*   **Manufacturing:** Automation, predictive maintenance.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Models that can create new content (text, images, etc.).\\n*   **Explainable AI (XAI):** Making AI decision-making more transparent and understandable.\\n*   **AI Ethics and Governance:** Addressing bias, fairness, and responsible AI development.\\n*   **Edge AI:** Processing AI tasks locally on devices rather than in the cloud.\\n*   **AI in Cybersecurity:** Using AI to detect and prevent cyber threats.\"\n    \n    \n\nPrimitives already executed: agent \"helperAgent\"\n\n    You need to evaluate if the task is complete. Pay very close attention to the SYSTEM INSTRUCTIONS for when the task is considered complete. \n    Only return true if the task is complete according to the system instructions.\n    Original task: Research AI briefly\n\n    If no primitive (type = 'none'), the task is complete because we can't run any primitive to further task completion.\n\n    Also, if the agent helperAgent has declined the tool call in its response, then the task is complete as the primitive tool-call was declined by the user.\n\n    IMPORTANT: If the above result is from an AGENT PRIMITIVE and it is a suitable final result itself considering the original task, then finalResult should be an empty string or undefined.\n    \n    If the task is complete and the result is not from an AGENT PRIMITIVE, always generate a finalResult.\n    IF the task is complete and the result is from an AGENT PRIMITIVE, but the AGENT PRIMITIVE response is not comprehensive enough to accomplish the user's original task, then generate a finalResult.\n\n    IMPORTANT: The generated finalResult should not be the exact primitive result. You should craft a comprehensive response based on the message history.\n    The finalResult field should be written in natural language.\n\n    You must return this JSON shape:\n    {\n      \"isComplete\": boolean,\n      \"completionReason\": string,\n      \"finalResult\": string,\n    }\n  "
                 }
               ]
             }
@@ -233,7 +234,7 @@
             ]
           }
         },
-        "timestamp": 1779286010191
+        "timestamp": 1779379132309
       },
       "response": {
         "status": 200,
@@ -242,28 +243,30 @@
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-disposition": "attachment",
           "content-type": "text/event-stream",
-          "date": "Wed, 20 May 2026 14:06:50 GMT",
+          "date": "Thu, 21 May 2026 15:58:53 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=445",
+          "server-timing": "gfet4t7; dur=770",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
           "x-xss-protection": "0"
         },
         "chunks": [
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"{\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1200,\"totalTokenCount\": 1200,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1200}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"\\n  \\\"\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1200,\"totalTokenCount\": 1200,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1200}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"isComplete\\\": true,\\n  \\\"completionReason\\\": \\\"The agent provided a comprehensive\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1200,\"totalTokenCount\": 1200,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1200}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" overview of AI, satisfying the request to research AI briefly.\\\",\\n  \\\"finalResult\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1200,\"totalTokenCount\": 1200,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1200}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"\\\": \\\"Here's a brief overview of Artificial Intelligence, covering its definition, key concepts like Machine Learning and Deep Learning, applications across various industries, and current trends such as\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1200,\"totalTokenCount\": 1200,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1200}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" Generative AI and AI Ethics.\\\"\\n}\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 1244,\"candidatesTokenCount\": 82,\"totalTokenCount\": 1326,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1244}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 82}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-r8Nat7sFOfl1PIP6vDegAk\"}\r\n\r\n"
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"{\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"\\n  \\\"\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"isComplete\\\": true,\\n  \\\"completionReason\\\": \\\"The agent has provided\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" a summary of AI, covering definition, key concepts, history, applications, and current trends,\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" fulfilling the request to research AI briefly.\\\",\\n  \\\"finalResult\\\": \\\"Artificial Intelligence (AI) is the creation of machines capable of tasks requiring human intelligence.\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" Key concepts include Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, and Robotics. AI's history includes early development in the 1950s,\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" the rise of symbolic AI, a period of reduced funding, and a resurgence driven by advancements in computing power and data. AI is applied in healthcare, finance, transportation, retail, and manufacturing. Current trends include Generative AI, Explainable AI,\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 1191,\"totalTokenCount\": 1191,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1191}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" AI Ethics and Governance, Edge AI, and AI in Cybersecurity.\\\"\\n}\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 1235,\"candidatesTokenCount\": 171,\"totalTokenCount\": 1406,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 1235}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 171}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vCsPaqLKIdaugLUPxZb3gAY\"}\r\n\r\n"
         ],
-        "chunkTimings": [0, 0, 10, 133, 246, 125],
+        "chunkTimings": [0, 1, 0, 33, 232, 241, 348, 119],
         "isStreaming": true
       }
     },
     {
-      "hash": "5e44d2979c18132f",
+      "hash": "26716684617da81d",
       "request": {
         "url": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:streamGenerateContent?alt=sse",
         "method": "POST",
@@ -290,7 +293,7 @@
               "role": "user",
               "parts": [
                 {
-                  "text": "\n    The task has been completed successfully.\n    Original task: Research AI briefly\n\n    The agent helperAgent produced this result:\n    \"Okay, here's a brief overview of Artificial Intelligence:\\n\\n**Definition:** Artificial Intelligence (AI) is the broad concept of creating machines capable of performing tasks that typically require human intelligence. This includes learning, problem-solving, decision-making, and perception.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):**  A subset of AI focused on enabling systems to learn from data without explicit programming. Common techniques include supervised learning (training on labeled data), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning through trial and error).\\n*   **Deep Learning (DL):** A subset of ML that uses artificial neural networks with multiple layers (deep neural networks) to analyze data with complex patterns.\\n*   **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   **Computer Vision:** Enables computers to \\\"see\\\" and interpret images and videos.\\n*   **Robotics:** Designing, constructing, operating, and applying robots to perform tasks.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine.\\n*   **Finance:** Fraud detection, algorithmic trading, risk management.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Manufacturing:** Automation, quality control, predictive maintenance.\\n*   **Customer Service:** Chatbots, virtual assistants.\\n*   **Entertainment:** Recommendation systems, content generation.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Rapid advancements in models capable of creating new content (text, images, audio, video).\\n*   **Explainable AI (XAI):**  Efforts to make AI decision-making more transparent and understandable.\\n*   **Edge AI:** Processing AI tasks locally on devices (e.g., smartphones, IoT devices) rather than relying solely on the cloud.\\n*   **AI Ethics and Governance:** Increasing focus on responsible AI development and deployment, addressing issues like bias, fairness, and privacy.\\n*   **AI in Cybersecurity:** Using AI to detect and respond to cyber threats.\\n\"\n\n    Based on the task and result above, generate a structured response according to the provided schema.\n    Use the conversation history and primitive results to craft the response.\n  "
+                  "text": "\n    The task has been completed successfully.\n    Original task: Research AI briefly\n\n    The agent helperAgent produced this result:\n    \"**Definition:** Artificial Intelligence (AI) is the broad concept of creating machines capable of performing tasks that typically require human intelligence.\\n\\n**Key Concepts:**\\n\\n*   **Machine Learning (ML):** Algorithms that allow computers to learn from data without explicit programming.\\n*   **Deep Learning (DL):** A subfield of ML using artificial neural networks with multiple layers to analyze data.\\n*   **Natural Language Processing (NLP):** Enables computers to understand, interpret, and generate human language.\\n*   **Computer Vision:** Allows computers to \\\"see\\\" and interpret images.\\n*   **Robotics:** Design, construction, operation, and application of robots.\\n\\n**History:**\\n\\n*   **Early Days (1950s):** Birth of AI with the Turing Test.\\n*   **Symbolic AI (1960s-1980s):** Focus on rule-based systems and expert systems.\\n*   **AI Winter (1980s-1990s):** Funding cuts due to unmet expectations.\\n*   **Resurgence (2000s-Present):** Driven by increased computing power, big data, and advancements in ML/DL.\\n\\n**Applications:**\\n\\n*   **Healthcare:** Diagnosis, drug discovery, personalized medicine.\\n*   **Finance:** Fraud detection, algorithmic trading.\\n*   **Transportation:** Self-driving cars, traffic optimization.\\n*   **Retail:** Recommendation systems, chatbots.\\n*   **Manufacturing:** Automation, predictive maintenance.\\n\\n**Current Trends:**\\n\\n*   **Generative AI:** Models that can create new content (text, images, etc.).\\n*   **Explainable AI (XAI):** Making AI decision-making more transparent and understandable.\\n*   **AI Ethics and Governance:** Addressing bias, fairness, and responsible AI development.\\n*   **Edge AI:** Processing AI tasks locally on devices rather than in the cloud.\\n*   **AI in Cybersecurity:** Using AI to detect and prevent cyber threats.\"\n\n    Based on the task and result above, generate a structured response according to the provided schema.\n    Use the conversation history and primitive results to craft the response.\n  "
                 }
               ]
             }
@@ -303,7 +306,7 @@
             ]
           }
         },
-        "timestamp": 1779286011748
+        "timestamp": 1779379135124
       },
       "response": {
         "status": 200,
@@ -312,22 +315,23 @@
           "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
           "content-disposition": "attachment",
           "content-type": "text/event-stream",
-          "date": "Wed, 20 May 2026 14:06:52 GMT",
+          "date": "Thu, 21 May 2026 15:58:55 GMT",
           "server": "scaffolding on HTTPServer2",
-          "server-timing": "gfet4t7; dur=577",
+          "server-timing": "gfet4t7; dur=501",
           "vary": "Origin, X-Origin, Referer",
           "x-content-type-options": "nosniff",
           "x-frame-options": "SAMEORIGIN",
           "x-xss-protection": "0"
         },
         "chunks": [
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"{\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 923,\"totalTokenCount\": 923,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 923}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-78NariLPKz7_NUPz4TG8As\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"\\n  \\\"\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 923,\"totalTokenCount\": 923,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 923}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-78NariLPKz7_NUPz4TG8As\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"summary\\\": \\\"The agent provided a good overview of AI covering definition, key concepts like\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 923,\"totalTokenCount\": 923,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 923}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-78NariLPKz7_NUPz4TG8As\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" ML, DL, NLP, and Robotics. It also provided information on applications, current\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 923,\"totalTokenCount\": 923,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 923}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-78NariLPKz7_NUPz4TG8As\"}\r\n\r\n",
-          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" trends like Generative AI, XAI, and AI Ethics.\\\",\\n  \\\"confidence\\\": 0.95\\n}\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 933,\"candidatesTokenCount\": 63,\"totalTokenCount\": 996,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 933}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 63}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"-78NariLPKz7_NUPz4TG8As\"}\r\n\r\n"
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"{\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 915,\"totalTokenCount\": 915,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 915}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"\\n  \\\"\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 915,\"totalTokenCount\": 915,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 915}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \"summary\\\": \\\"The agent successfully provided a brief overview of Artificial Intelligence (AI), covering its\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 915,\"totalTokenCount\": 915,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 915}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" definition, key concepts like Machine Learning and Deep Learning, a brief history from its\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 915,\"totalTokenCount\": 915,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 915}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" early days to the present resurgence, various applications across healthcare, finance, transportation, retail, and manufacturing, and current trends including Generative AI, Explainable AI,\"}],\"role\": \"model\"}}],\"usageMetadata\": {\"promptTokenCount\": 915,\"totalTokenCount\": 915,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 915}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n",
+          "data: {\"candidates\": [{\"content\": {\"parts\": [{\"text\": \" and AI Ethics.\\\",\\n  \\\"confidence\\\": 0.95\\n}\"}],\"role\": \"model\"},\"finishReason\": \"STOP\"}],\"usageMetadata\": {\"promptTokenCount\": 925,\"candidatesTokenCount\": 87,\"totalTokenCount\": 1012,\"promptTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 925}],\"candidatesTokensDetails\": [{\"modality\": \"TEXT\",\"tokenCount\": 87}],\"serviceTier\": \"standard\"},\"modelVersion\": \"gemini-2.0-flash\",\"responseId\": \"vysPaoTnEKjU1PIPw6ec4QI\"}\r\n\r\n"
         ],
-        "chunkTimings": [0, 0, 0, 145, 182],
+        "chunkTimings": [0, 0, 44, 78, 200, 111],
         "isStreaming": true
       }
     }
