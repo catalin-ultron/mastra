@@ -1,11 +1,11 @@
 {
   "meta": {
     "name": "schema-compat-src-provider-compats-anthropic.e2e",
-    "testFile": "src/provider-compats/anthropic.e2e.test.ts",
+    "testFile": "packages/schema-compat/src/provider-compats/anthropic.e2e.test.ts",
     "testName": "Anthropic e2e test",
     "model": "claude-sonnet-4-0",
     "createdAt": "2026-03-24T13:36:59.031Z",
-    "updatedAt": "2026-03-27T09:18:42.875Z"
+    "updatedAt": "2026-05-22T06:30:06.042Z"
   },
   "recordings": [
     {
@@ -312,7 +312,7 @@
             "disable_parallel_tool_use": true
           }
         },
-        "timestamp": 1774603081638
+        "timestamp": 1779431357257
       },
       "response": {
         "status": 200,
@@ -321,66 +321,66 @@
           "anthropic-organization-id": "a4b2106b-a1ab-4fd5-8d96-cdf4b3e9dc14",
           "anthropic-ratelimit-input-tokens-limit": "2000000",
           "anthropic-ratelimit-input-tokens-remaining": "1999000",
-          "anthropic-ratelimit-input-tokens-reset": "2026-03-27T09:18:03Z",
+          "anthropic-ratelimit-input-tokens-reset": "2026-05-22T06:29:18Z",
           "anthropic-ratelimit-output-tokens-limit": "400000",
-          "anthropic-ratelimit-output-tokens-remaining": "399000",
-          "anthropic-ratelimit-output-tokens-reset": "2026-03-27T09:18:12Z",
+          "anthropic-ratelimit-output-tokens-remaining": "400000",
+          "anthropic-ratelimit-output-tokens-reset": "2026-05-22T06:29:34Z",
           "anthropic-ratelimit-requests-limit": "20000",
           "anthropic-ratelimit-requests-remaining": "19999",
-          "anthropic-ratelimit-requests-reset": "2026-03-27T09:18:01Z",
+          "anthropic-ratelimit-requests-reset": "2026-05-22T06:29:17Z",
           "anthropic-ratelimit-tokens-limit": "2400000",
-          "anthropic-ratelimit-tokens-remaining": "2398000",
-          "anthropic-ratelimit-tokens-reset": "2026-03-27T09:18:03Z",
+          "anthropic-ratelimit-tokens-remaining": "2399000",
+          "anthropic-ratelimit-tokens-reset": "2026-05-22T06:29:18Z",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "9e2d4e2cfa08b759-BRU",
+          "cf-ray": "9ff9c3ff7c4090b8-BRU",
           "connection": "keep-alive",
           "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
           "content-type": "application/json",
-          "date": "Fri, 27 Mar 2026 09:18:12 GMT",
-          "request-id": "req_011CZTLN4q8bFvZmR4rj2aXR",
+          "date": "Fri, 22 May 2026 06:29:34 GMT",
+          "request-id": "req_011CbH8o2smDe6zRRPxvtm4n",
           "server": "cloudflare",
-          "server-timing": "x-originResponse;dur=10218",
           "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "traceresponse": "00-39ed7db32a0b4a725e43931eb4c0f33f-3ef7bbadb663c489-01",
           "vary": "Accept-Encoding",
-          "x-envoy-upstream-service-time": "10216",
+          "x-envoy-upstream-service-time": "16768",
           "x-robots-tag": "none"
         },
         "body": {
           "model": "claude-sonnet-4-20250514",
-          "id": "msg_01QyXUPaqReNZ7Jt4cRzsjKd",
+          "id": "msg_01Yb5hYkWAkAgGwuMpbTDL9a",
           "type": "message",
           "role": "assistant",
           "content": [
             {
               "type": "tool_use",
-              "id": "toolu_016UTevMEKVox4ZYVc1QixWL",
+              "id": "toolu_015dmd5iL1oBeDWU888ZyTuk",
               "name": "json",
               "input": {
                 "string": "Sample text",
                 "stringMin": "Hello world",
-                "stringMax": "Test data",
+                "stringMax": "Short text",
                 "stringEmail": "test@example.com",
                 "stringEmoji": "😀",
                 "stringUrl": "https://example.com",
-                "stringUuid": "550e8400-e29b-41d4-a716-446655440000",
-                "stringCuid": "cuid1234567890",
+                "stringUuid": "123e4567-e89b-12d3-a456-426614174000",
+                "stringCuid": "c1234567890",
                 "stringRegex": "test-example",
                 "number": 42.5,
-                "numberGt": 5.7,
-                "numberLt": 3.2,
+                "numberGt": 5,
+                "numberLt": 3,
                 "numberGte": 1,
                 "numberLte": 1,
-                "numberMultipleOf": 8,
-                "numberInt": 15,
+                "numberMultipleOf": 4,
+                "numberInt": 10,
                 "exampleArray": ["apple", "banana", "cherry"],
-                "arrayMin": ["required"],
+                "arrayMin": ["required item"],
                 "arrayMax": ["one", "two", "three"],
                 "date": "2024-01-15T10:30:00Z",
-                "dateAfter": "2024-02-01T12:00:00Z",
-                "dateBefore": "2023-12-15T14:30:00Z",
-                "actualData": "2024-03-10T09:15:00Z",
+                "dateAfter": "2024-02-15T14:30:00Z",
+                "dateBefore": "2023-12-01T09:00:00Z",
+                "actualData": "2024-01-20T16:45:00Z",
                 "object": {
-                  "foo": "example text",
+                  "foo": "example string",
                   "bar": 123
                 },
                 "objectNested": {
@@ -394,13 +394,13 @@
                   "anotherKey": 42
                 },
                 "objectLoose": {
-                  "exampleField": "data",
-                  "count": 10
+                  "example": "data",
+                  "count": 5
                 },
                 "nullable": null,
                 "enum": "A",
                 "nativeEnum": "B",
-                "unionPrimitives": 42,
+                "unionPrimitives": "example text",
                 "unionObjects": {
                   "amount": 100,
                   "inventoryItemName": "Widget"
@@ -415,15 +415,16 @@
           ],
           "stop_reason": "tool_use",
           "stop_sequence": null,
+          "stop_details": null,
           "usage": {
-            "input_tokens": 1936,
+            "input_tokens": 1938,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cache_creation": {
               "ephemeral_5m_input_tokens": 0,
               "ephemeral_1h_input_tokens": 0
             },
-            "output_tokens": 819,
+            "output_tokens": 810,
             "service_tier": "standard",
             "inference_geo": "not_available"
           }
@@ -432,7 +433,7 @@
       }
     },
     {
-      "hash": "43550433c9a1e13a",
+      "hash": "417b56ce9e49c4ae",
       "request": {
         "url": "https://api.anthropic.com/v1/messages",
         "method": "POST",
@@ -734,7 +735,7 @@
             "type": "auto"
           }
         },
-        "timestamp": 1774603092089
+        "timestamp": 1779431374280
       },
       "response": {
         "status": 200,
@@ -743,68 +744,68 @@
           "anthropic-organization-id": "a4b2106b-a1ab-4fd5-8d96-cdf4b3e9dc14",
           "anthropic-ratelimit-input-tokens-limit": "2000000",
           "anthropic-ratelimit-input-tokens-remaining": "1999000",
-          "anthropic-ratelimit-input-tokens-reset": "2026-03-27T09:18:13Z",
+          "anthropic-ratelimit-input-tokens-reset": "2026-05-22T06:29:35Z",
           "anthropic-ratelimit-output-tokens-limit": "400000",
           "anthropic-ratelimit-output-tokens-remaining": "399000",
-          "anthropic-ratelimit-output-tokens-reset": "2026-03-27T09:18:22Z",
+          "anthropic-ratelimit-output-tokens-reset": "2026-05-22T06:29:44Z",
           "anthropic-ratelimit-requests-limit": "20000",
           "anthropic-ratelimit-requests-remaining": "19999",
-          "anthropic-ratelimit-requests-reset": "2026-03-27T09:18:12Z",
+          "anthropic-ratelimit-requests-reset": "2026-05-22T06:29:34Z",
           "anthropic-ratelimit-tokens-limit": "2400000",
           "anthropic-ratelimit-tokens-remaining": "2398000",
-          "anthropic-ratelimit-tokens-reset": "2026-03-27T09:18:13Z",
+          "anthropic-ratelimit-tokens-reset": "2026-05-22T06:29:35Z",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "9e2d4e6dbc07b759-BRU",
+          "cf-ray": "9ff9c4698bb990b8-BRU",
           "connection": "keep-alive",
           "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
           "content-type": "application/json",
-          "date": "Fri, 27 Mar 2026 09:18:22 GMT",
-          "request-id": "req_011CZTLNq7Qkxk81PQFaK7at",
+          "date": "Fri, 22 May 2026 06:29:44 GMT",
+          "request-id": "req_011CbH8pHS9EiqmThU5Vet2A",
           "server": "cloudflare",
-          "server-timing": "x-originResponse;dur=10000",
           "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "traceresponse": "00-656ec417e79b12aa76d7bcca29d92bd2-d6f13d091f7b00f1-01",
           "vary": "Accept-Encoding",
-          "x-envoy-upstream-service-time": "9999",
+          "x-envoy-upstream-service-time": "10331",
           "x-robots-tag": "none"
         },
         "body": {
           "model": "claude-sonnet-4-20250514",
-          "id": "msg_01PM7ooAsF2qZfQJqYv3unMU",
+          "id": "msg_01UoMaCBvhhvUpV2vwfHE6F7",
           "type": "message",
           "role": "assistant",
           "content": [
             {
               "type": "text",
-              "text": "I'll call the manySchemasTool with valid sample data that matches all the required schema constraints:"
+              "text": "I'll call the manySchemasTool with valid sample data that matches all the schema requirements:"
             },
             {
               "type": "tool_use",
-              "id": "toolu_01HvfBWdF77X7bfWq8QRHg3U",
+              "id": "toolu_018NL8xUC85G42ZBPw8mNjty",
               "name": "manySchemasTool",
               "input": {
                 "string": "Hello World",
                 "stringMin": "Hello",
-                "stringMax": "Short",
+                "stringMax": "Short text",
                 "stringEmail": "user@example.com",
                 "stringEmoji": "😀",
                 "stringUrl": "https://www.example.com",
-                "stringUuid": "550e8400-e29b-41d4-a716-446655440000",
-                "stringCuid": "c123456789",
-                "stringRegex": "test-sample",
+                "stringUuid": "123e4567-e89b-12d3-a456-426614174000",
+                "stringCuid": "c123abc456def",
+                "stringRegex": "test-example",
                 "number": 42.5,
-                "numberGt": 5,
-                "numberLt": 4,
+                "numberGt": 5.7,
+                "numberLt": 4.2,
                 "numberGte": 1,
-                "numberLte": 1,
+                "numberLte": 0.5,
                 "numberMultipleOf": 8,
-                "numberInt": 100,
+                "numberInt": 15,
                 "exampleArray": ["apple", "banana", "cherry"],
                 "arrayMin": ["item1"],
-                "arrayMax": ["a", "b", "c"],
-                "date": "2023-06-15T14:30:00Z",
-                "dateAfter": "2024-06-15T10:00:00Z",
-                "dateBefore": "2023-12-01T09:00:00Z",
-                "actualData": "2024-03-20T16:45:30Z",
+                "arrayMax": ["a", "b", "c", "d", "e"],
+                "date": "2023-06-15T10:30:00Z",
+                "dateAfter": "2024-03-15T14:20:00Z",
+                "dateBefore": "2023-12-01T09:15:00Z",
+                "actualData": "2024-01-20T16:45:00Z",
                 "object": {
                   "foo": "example",
                   "bar": 123
@@ -821,16 +822,16 @@
                   "key3": true
                 },
                 "objectLoose": {
-                  "name": "Sample",
-                  "id": 456,
+                  "example": "data",
+                  "count": 5,
                   "active": true
                 },
                 "nullable": null,
-                "enum": "A",
-                "nativeEnum": "B",
-                "unionPrimitives": "Sample text",
+                "enum": "B",
+                "nativeEnum": "A",
+                "unionPrimitives": "Hello",
                 "unionObjects": {
-                  "amount": 150,
+                  "amount": 100,
                   "inventoryItemName": "Widget"
                 },
                 "default": "test"
@@ -842,15 +843,16 @@
           ],
           "stop_reason": "tool_use",
           "stop_sequence": null,
+          "stop_details": null,
           "usage": {
-            "input_tokens": 1985,
+            "input_tokens": 1987,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cache_creation": {
               "ephemeral_5m_input_tokens": 0,
               "ephemeral_1h_input_tokens": 0
             },
-            "output_tokens": 850,
+            "output_tokens": 862,
             "service_tier": "standard",
             "inference_geo": "not_available"
           }
@@ -859,7 +861,7 @@
       }
     },
     {
-      "hash": "8bba6a4ebe106165",
+      "hash": "1b72341cd56820fb",
       "request": {
         "url": "https://api.anthropic.com/v1/messages",
         "method": "POST",
@@ -881,36 +883,36 @@
               "content": [
                 {
                   "type": "text",
-                  "text": "I'll call the manySchemasTool with valid sample data that matches all the required schema constraints:"
+                  "text": "I'll call the manySchemasTool with valid sample data that matches all the schema requirements:"
                 },
                 {
                   "type": "tool_use",
-                  "id": "toolu_01HvfBWdF77X7bfWq8QRHg3U",
+                  "id": "toolu_018NL8xUC85G42ZBPw8mNjty",
                   "name": "manySchemasTool",
                   "input": {
                     "string": "Hello World",
                     "stringMin": "Hello",
-                    "stringMax": "Short",
+                    "stringMax": "Short text",
                     "stringEmail": "user@example.com",
                     "stringEmoji": "😀",
                     "stringUrl": "https://www.example.com",
-                    "stringUuid": "550e8400-e29b-41d4-a716-446655440000",
-                    "stringCuid": "c123456789",
-                    "stringRegex": "test-sample",
+                    "stringUuid": "123e4567-e89b-12d3-a456-426614174000",
+                    "stringCuid": "c123abc456def",
+                    "stringRegex": "test-example",
                     "number": 42.5,
-                    "numberGt": 5,
-                    "numberLt": 4,
+                    "numberGt": 5.7,
+                    "numberLt": 4.2,
                     "numberGte": 1,
-                    "numberLte": 1,
+                    "numberLte": 0.5,
                     "numberMultipleOf": 8,
-                    "numberInt": 100,
+                    "numberInt": 15,
                     "exampleArray": ["apple", "banana", "cherry"],
                     "arrayMin": ["item1"],
-                    "arrayMax": ["a", "b", "c"],
-                    "date": "2023-06-15T14:30:00Z",
-                    "dateAfter": "2024-06-15T10:00:00Z",
-                    "dateBefore": "2023-12-01T09:00:00Z",
-                    "actualData": "2024-03-20T16:45:30Z",
+                    "arrayMax": ["a", "b", "c", "d", "e"],
+                    "date": "2023-06-15T10:30:00Z",
+                    "dateAfter": "2024-03-15T14:20:00Z",
+                    "dateBefore": "2023-12-01T09:15:00Z",
+                    "actualData": "2024-01-20T16:45:00Z",
                     "object": {
                       "foo": "example",
                       "bar": 123
@@ -927,16 +929,16 @@
                       "key3": true
                     },
                     "objectLoose": {
-                      "name": "Sample",
-                      "id": 456,
+                      "example": "data",
+                      "count": 5,
                       "active": true
                     },
                     "nullable": null,
-                    "enum": "A",
-                    "nativeEnum": "B",
-                    "unionPrimitives": "Sample text",
+                    "enum": "B",
+                    "nativeEnum": "A",
+                    "unionPrimitives": "Hello",
                     "unionObjects": {
-                      "amount": 150,
+                      "amount": 100,
                       "inventoryItemName": "Widget"
                     },
                     "default": "test"
@@ -952,8 +954,8 @@
               "content": [
                 {
                   "type": "tool_result",
-                  "tool_use_id": "toolu_01HvfBWdF77X7bfWq8QRHg3U",
-                  "content": "{\"string\":\"Hello World\",\"stringMin\":\"Hello\",\"stringMax\":\"Short\",\"stringEmail\":\"user@example.com\",\"stringEmoji\":\"😀\",\"stringUrl\":\"https://www.example.com\",\"stringUuid\":\"550e8400-e29b-41d4-a716-446655440000\",\"stringCuid\":\"c123456789\",\"stringRegex\":\"test-sample\",\"number\":42.5,\"numberGt\":5,\"numberLt\":4,\"numberGte\":1,\"numberLte\":1,\"numberMultipleOf\":8,\"numberInt\":100,\"exampleArray\":[\"apple\",\"banana\",\"cherry\"],\"arrayMin\":[\"item1\"],\"arrayMax\":[\"a\",\"b\",\"c\"],\"date\":\"2023-06-15T14:30:00Z\",\"dateAfter\":\"2024-06-15T10:00:00Z\",\"dateBefore\":\"2023-12-01T09:00:00Z\",\"actualData\":\"2024-03-20T16:45:30Z\",\"object\":{\"foo\":\"example\",\"bar\":123},\"objectNested\":{\"user\":{\"name\":\"John Doe\",\"age\":25}},\"objectPassthrough\":{\"key1\":\"value1\",\"key2\":42,\"key3\":true},\"objectLoose\":{\"name\":\"Sample\",\"id\":456,\"active\":true},\"nullable\":null,\"enum\":\"A\",\"nativeEnum\":\"B\",\"unionPrimitives\":\"Sample text\",\"unionObjects\":{\"amount\":150,\"inventoryItemName\":\"Widget\"},\"default\":\"test\"}"
+                  "tool_use_id": "toolu_018NL8xUC85G42ZBPw8mNjty",
+                  "content": "{\"string\":\"Hello World\",\"stringMin\":\"Hello\",\"stringMax\":\"Short text\",\"stringEmail\":\"user@example.com\",\"stringEmoji\":\"😀\",\"stringUrl\":\"https://www.example.com\",\"stringUuid\":\"123e4567-e89b-12d3-a456-426614174000\",\"stringCuid\":\"c123abc456def\",\"stringRegex\":\"test-example\",\"number\":42.5,\"numberGt\":5.7,\"numberLt\":4.2,\"numberGte\":1,\"numberLte\":0.5,\"numberMultipleOf\":8,\"numberInt\":15,\"exampleArray\":[\"apple\",\"banana\",\"cherry\"],\"arrayMin\":[\"item1\"],\"arrayMax\":[\"a\",\"b\",\"c\",\"d\",\"e\"],\"date\":\"2023-06-15T10:30:00Z\",\"dateAfter\":\"2024-03-15T14:20:00Z\",\"dateBefore\":\"2023-12-01T09:15:00Z\",\"actualData\":\"2024-01-20T16:45:00Z\",\"object\":{\"foo\":\"example\",\"bar\":123},\"objectNested\":{\"user\":{\"name\":\"John Doe\",\"age\":25}},\"objectPassthrough\":{\"key1\":\"value1\",\"key2\":42,\"key3\":true},\"objectLoose\":{\"example\":\"data\",\"count\":5,\"active\":true},\"nullable\":null,\"enum\":\"B\",\"nativeEnum\":\"A\",\"unionPrimitives\":\"Hello\",\"unionObjects\":{\"amount\":100,\"inventoryItemName\":\"Widget\"},\"default\":\"test\"}"
                 }
               ]
             }
@@ -1242,7 +1244,7 @@
             "type": "auto"
           }
         },
-        "timestamp": 1774603102206
+        "timestamp": 1779431384769
       },
       "response": {
         "status": 200,
@@ -1251,52 +1253,53 @@
           "anthropic-organization-id": "a4b2106b-a1ab-4fd5-8d96-cdf4b3e9dc14",
           "anthropic-ratelimit-input-tokens-limit": "2000000",
           "anthropic-ratelimit-input-tokens-remaining": "1998000",
-          "anthropic-ratelimit-input-tokens-reset": "2026-03-27T09:18:23Z",
+          "anthropic-ratelimit-input-tokens-reset": "2026-05-22T06:29:45Z",
           "anthropic-ratelimit-output-tokens-limit": "400000",
           "anthropic-ratelimit-output-tokens-remaining": "400000",
-          "anthropic-ratelimit-output-tokens-reset": "2026-03-27T09:18:27Z",
+          "anthropic-ratelimit-output-tokens-reset": "2026-05-22T06:29:50Z",
           "anthropic-ratelimit-requests-limit": "20000",
           "anthropic-ratelimit-requests-remaining": "19999",
-          "anthropic-ratelimit-requests-reset": "2026-03-27T09:18:22Z",
+          "anthropic-ratelimit-requests-reset": "2026-05-22T06:29:44Z",
           "anthropic-ratelimit-tokens-limit": "2400000",
           "anthropic-ratelimit-tokens-remaining": "2398000",
-          "anthropic-ratelimit-tokens-reset": "2026-03-27T09:18:23Z",
+          "anthropic-ratelimit-tokens-reset": "2026-05-22T06:29:45Z",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "9e2d4eacfa8cb759-BRU",
+          "cf-ray": "9ff9c4ab1ab390b8-BRU",
           "connection": "keep-alive",
           "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
           "content-type": "application/json",
-          "date": "Fri, 27 Mar 2026 09:18:27 GMT",
-          "request-id": "req_011CZTLPaUs7g1pfP6evseG3",
+          "date": "Fri, 22 May 2026 06:29:50 GMT",
+          "request-id": "req_011CbH8q4GevbCS2SEgWzTt7",
           "server": "cloudflare",
-          "server-timing": "x-originResponse;dur=4918",
           "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "traceresponse": "00-e333ac6f2fe7fc14c0e8b25ab1dde6d1-8743bdc4df1e23cf-01",
           "vary": "Accept-Encoding",
-          "x-envoy-upstream-service-time": "4916",
+          "x-envoy-upstream-service-time": "5359",
           "x-robots-tag": "none"
         },
         "body": {
           "model": "claude-sonnet-4-20250514",
-          "id": "msg_017Tucj54u2ngqc3kic63G9m",
+          "id": "msg_01RN8GBTUfwxraiDU2GJsfh7",
           "type": "message",
           "role": "assistant",
           "content": [
             {
               "type": "text",
-              "text": "Perfect! I successfully called the manySchemasTool with valid sample data that satisfies all the schema requirements. The tool accepted all the parameters and returned the data, confirming that:\n\n- All string constraints were met (minimum/maximum lengths, formats, regex patterns)\n- All number constraints were satisfied (greater than, less than, multiples, integers)\n- Array constraints were respected (minimum/maximum lengths)\n- Date formats were valid and within specified ranges\n- Objects had the required structure and properties\n- Nullable and optional fields were handled appropriately\n- Enum values were from the allowed sets\n- Union types received valid data matching one of the allowed schemas\n\nThe function executed successfully, demonstrating that all the sample data provided matched the complex schema requirements."
+              "text": "I successfully called the manySchemasTool with valid sample data that satisfies all the schema requirements. The tool accepted all the parameters and returned the complete data structure, confirming that:\n\n- All string constraints were met (minimum/maximum lengths, email format, emoji, URL, UUID, CUID, regex pattern)\n- All number constraints were satisfied (greater than, less than, multiples, integers)\n- Arrays met their size requirements\n- Date formats and constraints were properly handled\n- Objects had the required structure and properties\n- Nullable and optional fields were handled correctly\n- Enum values were from the allowed sets\n- Union types were properly typed\n- Default values were used appropriately\n\nThe function call was successful and all validation passed!"
             }
           ],
           "stop_reason": "end_turn",
           "stop_sequence": null,
+          "stop_details": null,
           "usage": {
-            "input_tokens": 3189,
+            "input_tokens": 3214,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cache_creation": {
               "ephemeral_5m_input_tokens": 0,
               "ephemeral_1h_input_tokens": 0
             },
-            "output_tokens": 164,
+            "output_tokens": 161,
             "service_tier": "standard",
             "inference_geo": "not_available"
           }
@@ -1305,7 +1308,7 @@
       }
     },
     {
-      "hash": "228117b9b6669bd6",
+      "hash": "5e60c0e312e85ef0",
       "request": {
         "url": "https://api.anthropic.com/v1/messages",
         "method": "POST",
@@ -1607,7 +1610,7 @@
             "type": "auto"
           }
         },
-        "timestamp": 1774603107250
+        "timestamp": 1779431390329
       },
       "response": {
         "status": 200,
@@ -1616,33 +1619,33 @@
           "anthropic-organization-id": "a4b2106b-a1ab-4fd5-8d96-cdf4b3e9dc14",
           "anthropic-ratelimit-input-tokens-limit": "2000000",
           "anthropic-ratelimit-input-tokens-remaining": "1999000",
-          "anthropic-ratelimit-input-tokens-reset": "2026-03-27T09:18:28Z",
+          "anthropic-ratelimit-input-tokens-reset": "2026-05-22T06:29:51Z",
           "anthropic-ratelimit-output-tokens-limit": "400000",
           "anthropic-ratelimit-output-tokens-remaining": "399000",
-          "anthropic-ratelimit-output-tokens-reset": "2026-03-27T09:18:37Z",
+          "anthropic-ratelimit-output-tokens-reset": "2026-05-22T06:30:00Z",
           "anthropic-ratelimit-requests-limit": "20000",
           "anthropic-ratelimit-requests-remaining": "19999",
-          "anthropic-ratelimit-requests-reset": "2026-03-27T09:18:27Z",
+          "anthropic-ratelimit-requests-reset": "2026-05-22T06:29:50Z",
           "anthropic-ratelimit-tokens-limit": "2400000",
           "anthropic-ratelimit-tokens-remaining": "2398000",
-          "anthropic-ratelimit-tokens-reset": "2026-03-27T09:18:28Z",
+          "anthropic-ratelimit-tokens-reset": "2026-05-22T06:29:51Z",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "9e2d4ecc790bb759-BRU",
+          "cf-ray": "9ff9c4cdd81190b8-BRU",
           "connection": "keep-alive",
           "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
           "content-type": "application/json",
-          "date": "Fri, 27 Mar 2026 09:18:37 GMT",
-          "request-id": "req_011CZTLPwwTK4EyfQus76A4Z",
+          "date": "Fri, 22 May 2026 06:30:00 GMT",
+          "request-id": "req_011CbH8qU39SSyKZ9Zf8fmGh",
           "server": "cloudflare",
-          "server-timing": "x-originResponse;dur=9849",
           "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "traceresponse": "00-50f30fc5eb86413c5df77099b9f977c9-1dcf614a27240758-01",
           "vary": "Accept-Encoding",
-          "x-envoy-upstream-service-time": "9847",
+          "x-envoy-upstream-service-time": "10052",
           "x-robots-tag": "none"
         },
         "body": {
           "model": "claude-sonnet-4-20250514",
-          "id": "msg_017nQxtH36wCiUR8zYjcjcLH",
+          "id": "msg_01KjwJQFdET1N3v2p9wr216M",
           "type": "message",
           "role": "assistant",
           "content": [
@@ -1652,32 +1655,32 @@
             },
             {
               "type": "tool_use",
-              "id": "toolu_01Sfznh95PjSucEMNzEJStPF",
+              "id": "toolu_01AgyyeYWubwA1Hua6PKnCxv",
               "name": "manySchemasTool",
               "input": {
                 "string": "Sample text",
-                "stringMin": "Hello World",
+                "stringMin": "Hello world",
                 "stringMax": "Short text",
                 "stringEmail": "user@example.com",
-                "stringEmoji": "😀",
+                "stringEmoji": "😊",
                 "stringUrl": "https://www.example.com",
-                "stringUuid": "550e8400-e29b-41d4-a716-446655440000",
-                "stringCuid": "c1234567890",
+                "stringUuid": "123e4567-e89b-12d3-a456-426614174000",
+                "stringCuid": "c123abc456def",
                 "stringRegex": "test-example",
                 "number": 42.5,
-                "numberGt": 5,
-                "numberLt": 4,
+                "numberGt": 5.7,
+                "numberLt": 3.8,
                 "numberGte": 1,
                 "numberLte": 0.5,
                 "numberMultipleOf": 8,
-                "numberInt": 100,
-                "exampleArray": ["apple", "banana", "cherry"],
-                "arrayMin": ["item1"],
-                "arrayMax": ["a", "b", "c", "d", "e"],
-                "date": "2023-06-15T10:30:00Z",
-                "dateAfter": "2024-03-15T14:20:00Z",
-                "dateBefore": "2023-12-01T09:00:00Z",
-                "actualData": "2024-01-15T12:00:00Z",
+                "numberInt": 25,
+                "exampleArray": ["item1", "item2", "item3"],
+                "arrayMin": ["required item"],
+                "arrayMax": ["one", "two", "three"],
+                "date": "2023-12-15T14:30:00Z",
+                "dateAfter": "2024-06-15T10:00:00Z",
+                "dateBefore": "2023-11-20T16:45:00Z",
+                "actualData": "2024-01-15T09:30:00Z",
                 "object": {
                   "foo": "example",
                   "bar": 123
@@ -1695,16 +1698,15 @@
                 },
                 "objectLoose": {
                   "example": "data",
-                  "count": 5,
-                  "active": true
+                  "count": 5
                 },
                 "nullable": null,
                 "enum": "A",
                 "nativeEnum": "B",
                 "unionPrimitives": "Hello",
                 "unionObjects": {
-                  "amount": 15.99,
-                  "inventoryItemName": "Widget"
+                  "amount": 100,
+                  "inventoryItemName": "Widget A"
                 },
                 "default": "test"
               },
@@ -1715,15 +1717,16 @@
           ],
           "stop_reason": "tool_use",
           "stop_sequence": null,
+          "stop_details": null,
           "usage": {
-            "input_tokens": 1991,
+            "input_tokens": 1993,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cache_creation": {
               "ephemeral_5m_input_tokens": 0,
               "ephemeral_1h_input_tokens": 0
             },
-            "output_tokens": 861,
+            "output_tokens": 858,
             "service_tier": "standard",
             "inference_geo": "not_available"
           }
@@ -1732,7 +1735,7 @@
       }
     },
     {
-      "hash": "38c49cb1e5df2300",
+      "hash": "6b902c8b147f702e",
       "request": {
         "url": "https://api.anthropic.com/v1/messages",
         "method": "POST",
@@ -1758,32 +1761,32 @@
                 },
                 {
                   "type": "tool_use",
-                  "id": "toolu_01Sfznh95PjSucEMNzEJStPF",
+                  "id": "toolu_01AgyyeYWubwA1Hua6PKnCxv",
                   "name": "manySchemasTool",
                   "input": {
                     "string": "Sample text",
-                    "stringMin": "Hello World",
+                    "stringMin": "Hello world",
                     "stringMax": "Short text",
                     "stringEmail": "user@example.com",
-                    "stringEmoji": "😀",
+                    "stringEmoji": "😊",
                     "stringUrl": "https://www.example.com",
-                    "stringUuid": "550e8400-e29b-41d4-a716-446655440000",
-                    "stringCuid": "c1234567890",
+                    "stringUuid": "123e4567-e89b-12d3-a456-426614174000",
+                    "stringCuid": "c123abc456def",
                     "stringRegex": "test-example",
                     "number": 42.5,
-                    "numberGt": 5,
-                    "numberLt": 4,
+                    "numberGt": 5.7,
+                    "numberLt": 3.8,
                     "numberGte": 1,
                     "numberLte": 0.5,
                     "numberMultipleOf": 8,
-                    "numberInt": 100,
-                    "exampleArray": ["apple", "banana", "cherry"],
-                    "arrayMin": ["item1"],
-                    "arrayMax": ["a", "b", "c", "d", "e"],
-                    "date": "2023-06-15T10:30:00Z",
-                    "dateAfter": "2024-03-15T14:20:00Z",
-                    "dateBefore": "2023-12-01T09:00:00Z",
-                    "actualData": "2024-01-15T12:00:00.000Z",
+                    "numberInt": 25,
+                    "exampleArray": ["item1", "item2", "item3"],
+                    "arrayMin": ["required item"],
+                    "arrayMax": ["one", "two", "three"],
+                    "date": "2023-12-15T14:30:00Z",
+                    "dateAfter": "2024-06-15T10:00:00Z",
+                    "dateBefore": "2023-11-20T16:45:00Z",
+                    "actualData": "2024-01-15T09:30:00.000Z",
                     "object": {
                       "foo": "example",
                       "bar": 123
@@ -1801,16 +1804,15 @@
                     },
                     "objectLoose": {
                       "example": "data",
-                      "count": 5,
-                      "active": true
+                      "count": 5
                     },
                     "nullable": null,
                     "enum": "A",
                     "nativeEnum": "B",
                     "unionPrimitives": "Hello",
                     "unionObjects": {
-                      "amount": 15.99,
-                      "inventoryItemName": "Widget"
+                      "amount": 100,
+                      "inventoryItemName": "Widget A"
                     },
                     "default": "test"
                   },
@@ -1825,8 +1827,8 @@
               "content": [
                 {
                   "type": "tool_result",
-                  "tool_use_id": "toolu_01Sfznh95PjSucEMNzEJStPF",
-                  "content": "{\"string\":\"Sample text\",\"stringMin\":\"Hello World\",\"stringMax\":\"Short text\",\"stringEmail\":\"user@example.com\",\"stringEmoji\":\"😀\",\"stringUrl\":\"https://www.example.com\",\"stringUuid\":\"550e8400-e29b-41d4-a716-446655440000\",\"stringCuid\":\"c1234567890\",\"stringRegex\":\"test-example\",\"number\":42.5,\"numberGt\":5,\"numberLt\":4,\"numberGte\":1,\"numberLte\":0.5,\"numberMultipleOf\":8,\"numberInt\":100,\"exampleArray\":[\"apple\",\"banana\",\"cherry\"],\"arrayMin\":[\"item1\"],\"arrayMax\":[\"a\",\"b\",\"c\",\"d\",\"e\"],\"date\":\"2023-06-15T10:30:00.000Z\",\"dateAfter\":\"2024-03-15T14:20:00.000Z\",\"dateBefore\":\"2023-12-01T09:00:00.000Z\",\"actualData\":\"2024-01-15T12:00:00.000Z\",\"object\":{\"foo\":\"example\",\"bar\":123},\"objectNested\":{\"user\":{\"name\":\"John Doe\",\"age\":25}},\"objectPassthrough\":{\"key1\":\"value1\",\"key2\":42,\"key3\":true},\"objectLoose\":{\"example\":\"data\",\"count\":5,\"active\":true},\"nullable\":null,\"enum\":\"A\",\"nativeEnum\":\"B\",\"unionPrimitives\":\"Hello\",\"unionObjects\":{\"amount\":15.99,\"inventoryItemName\":\"Widget\"},\"default\":\"test\"}"
+                  "tool_use_id": "toolu_01AgyyeYWubwA1Hua6PKnCxv",
+                  "content": "{\"string\":\"Sample text\",\"stringMin\":\"Hello world\",\"stringMax\":\"Short text\",\"stringEmail\":\"user@example.com\",\"stringEmoji\":\"😊\",\"stringUrl\":\"https://www.example.com\",\"stringUuid\":\"123e4567-e89b-12d3-a456-426614174000\",\"stringCuid\":\"c123abc456def\",\"stringRegex\":\"test-example\",\"number\":42.5,\"numberGt\":5.7,\"numberLt\":3.8,\"numberGte\":1,\"numberLte\":0.5,\"numberMultipleOf\":8,\"numberInt\":25,\"exampleArray\":[\"item1\",\"item2\",\"item3\"],\"arrayMin\":[\"required item\"],\"arrayMax\":[\"one\",\"two\",\"three\"],\"date\":\"2023-12-15T14:30:00.000Z\",\"dateAfter\":\"2024-06-15T10:00:00.000Z\",\"dateBefore\":\"2023-11-20T16:45:00.000Z\",\"actualData\":\"2024-01-15T09:30:00.000Z\",\"object\":{\"foo\":\"example\",\"bar\":123},\"objectNested\":{\"user\":{\"name\":\"John Doe\",\"age\":25}},\"objectPassthrough\":{\"key1\":\"value1\",\"key2\":42,\"key3\":true},\"objectLoose\":{\"example\":\"data\",\"count\":5},\"nullable\":null,\"enum\":\"A\",\"nativeEnum\":\"B\",\"unionPrimitives\":\"Hello\",\"unionObjects\":{\"amount\":100,\"inventoryItemName\":\"Widget A\"},\"default\":\"test\"}"
                 }
               ]
             }
@@ -2115,7 +2117,7 @@
             "type": "auto"
           }
         },
-        "timestamp": 1774603117218
+        "timestamp": 1779431400539
       },
       "response": {
         "status": 200,
@@ -2124,52 +2126,53 @@
           "anthropic-organization-id": "a4b2106b-a1ab-4fd5-8d96-cdf4b3e9dc14",
           "anthropic-ratelimit-input-tokens-limit": "2000000",
           "anthropic-ratelimit-input-tokens-remaining": "1998000",
-          "anthropic-ratelimit-input-tokens-reset": "2026-03-27T09:18:38Z",
+          "anthropic-ratelimit-input-tokens-reset": "2026-05-22T06:30:01Z",
           "anthropic-ratelimit-output-tokens-limit": "400000",
           "anthropic-ratelimit-output-tokens-remaining": "400000",
-          "anthropic-ratelimit-output-tokens-reset": "2026-03-27T09:18:42Z",
+          "anthropic-ratelimit-output-tokens-reset": "2026-05-22T06:30:05Z",
           "anthropic-ratelimit-requests-limit": "20000",
           "anthropic-ratelimit-requests-remaining": "19999",
-          "anthropic-ratelimit-requests-reset": "2026-03-27T09:18:37Z",
+          "anthropic-ratelimit-requests-reset": "2026-05-22T06:30:00Z",
           "anthropic-ratelimit-tokens-limit": "2400000",
           "anthropic-ratelimit-tokens-remaining": "2398000",
-          "anthropic-ratelimit-tokens-reset": "2026-03-27T09:18:38Z",
+          "anthropic-ratelimit-tokens-reset": "2026-05-22T06:30:01Z",
           "cf-cache-status": "DYNAMIC",
-          "cf-ray": "9e2d4f0acffbb759-BRU",
+          "cf-ray": "9ff9c50daead90b8-BRU",
           "connection": "keep-alive",
           "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
           "content-type": "application/json",
-          "date": "Fri, 27 Mar 2026 09:18:42 GMT",
-          "request-id": "req_011CZTLQga1ZoqdEUCwga3Fe",
+          "date": "Fri, 22 May 2026 06:30:06 GMT",
+          "request-id": "req_011CbH8rDiDQcWgs4pGpHbeA",
           "server": "cloudflare",
-          "server-timing": "x-originResponse;dur=5534",
           "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+          "traceresponse": "00-662fce7feadd3678769b32ce7afc7dbb-39827ad0c59fc311-01",
           "vary": "Accept-Encoding",
-          "x-envoy-upstream-service-time": "5532",
+          "x-envoy-upstream-service-time": "5291",
           "x-robots-tag": "none"
         },
         "body": {
           "model": "claude-sonnet-4-20250514",
-          "id": "msg_016npPSqGGnqaDAvNWsDQcvJ",
+          "id": "msg_01DomQfRhkE6HAVv7D898XV1",
           "type": "message",
           "role": "assistant",
           "content": [
             {
               "type": "text",
-              "text": "The tool call was successful! The manySchemasTool validated all the sample data and returned the processed output. Here's what was validated:\n\n- **String fields**: Various text samples with different constraints (min/max length, email format, emoji, URL, UUID, CUID, regex pattern)\n- **Number fields**: Different numeric values with constraints (greater than, less than, multiples, integers)\n- **Array fields**: String arrays with minimum and maximum length constraints\n- **Date fields**: Valid ISO date-time strings with temporal constraints\n- **Object fields**: Nested objects with required properties and validation rules\n- **Special fields**: Nullable field set to null, enum values, union types\n- **Default field**: Used the default value \"test\"\n\nAll the data passed validation according to the schema constraints, demonstrating that the tool properly handles complex validation rules including format validation, numerical constraints, array length limits, object structure requirements, and union types."
+              "text": "The manySchemasTool has been successfully called with valid sample data that matches all the schema requirements. The tool validated and returned the data with the following key points:\n\n- **Strings**: Various string formats including email, emoji, URL, UUID, CUID, and regex patterns\n- **Numbers**: Different numeric constraints (greater than, less than, multiples, integers)\n- **Arrays**: With minimum and maximum length constraints\n- **Dates**: Valid date-time strings with various constraints\n- **Objects**: Nested and loose objects with required properties\n- **Special types**: Nullable field (set to null), enums, unions, and default values\n\nAll data was successfully validated against the complex schema and returned in the expected format."
             }
           ],
           "stop_reason": "end_turn",
           "stop_sequence": null,
+          "stop_details": null,
           "usage": {
-            "input_tokens": 3226,
+            "input_tokens": 3221,
             "cache_creation_input_tokens": 0,
             "cache_read_input_tokens": 0,
             "cache_creation": {
               "ephemeral_5m_input_tokens": 0,
               "ephemeral_1h_input_tokens": 0
             },
-            "output_tokens": 206,
+            "output_tokens": 160,
             "service_tier": "standard",
             "inference_geo": "not_available"
           }
