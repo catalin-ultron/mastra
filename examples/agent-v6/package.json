@@ -6,8 +6,8 @@
   "main": "index.js",
   "version": "0.0.1",
   "scripts": {
-    "start": "npx bun src/example.ts",
-    "processor-demo": "npx bun src/processor-demo.ts",
+    "start": "npx tsx src/example.ts",
+    "processor-demo": "npx tsx src/processor-demo.ts",
     "mastra:build": "mastra build",
     "mastra:dev": "mastra dev"
   },
@@ -30,7 +30,8 @@
   },
   "devDependencies": {
     "mastra": "beta",
-    "msw": "^2.12.2"
+    "msw": "^2.12.2",
+    "tsx": "^4.19.0"
   },
   "pnpm": {
     "overrides": {

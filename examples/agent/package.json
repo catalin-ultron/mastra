@@ -59,9 +59,9 @@
     }
   },
   "scripts": {
-    "start-deployed": "npx bun src/with-deployed.ts",
-    "start": "npx bun src/index.ts",
-    "processor-demo": "npx bun src/processor-demo.ts",
+    "start-deployed": "npx tsx src/with-deployed.ts",
+    "start": "npx tsx src/index.ts",
+    "processor-demo": "npx tsx src/processor-demo.ts",
     "mastra:dev": "mastra dev",
     "mastra:build": "mastra build -s",
     "mastra:start": "mastra start",
